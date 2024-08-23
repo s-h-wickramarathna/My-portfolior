@@ -227,7 +227,7 @@ h6 {
   margin-bottom: 8px;
   font-size: 15px;
   border-radius: 50px;
-  background: color-mix(in srgb, var(--default-color), transparent 92%);
+  background: color-mix(in srgb, var(--default-color), transparent 0%);
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -527,7 +527,7 @@ section,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: 1;
 }
 
 .hero .container {
@@ -1444,3 +1444,54 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.nav-text{
+  width: fit-content;
+  position: absolute;
+  z-index: 10;
+  margin: 20px;
+  left: 0;
+}
+
+.bg-main-div{
+  background-color: #d4d2d2;
+}
+
+/* Basic styles for the button */
+.glow-button {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background-color: #1d5377;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 0 20px #3498db;
+  animation: glowing 2s infinite;
+}
+
+/* Animation to create glowing effect */
+@keyframes glowing {
+  0% {
+      box-shadow: 0 0 5px #3498db, 0 0 10px #3498db, 0 0 15px #3498db, 0 0 20px #3498db;
+      background-color: #3498db;
+  }
+  50% {
+      box-shadow: 0 0 20px #3498db, 0 0 30px #3498db, 0 0 40px #3498db, 0 0 50px #3498db;
+      background-color: #2980b9;
+  }
+  100% {
+      box-shadow: 0 0 5px #3498db, 0 0 10px #3498db, 0 0 15px #3498db, 0 0 20px #3498db;
+      background-color: #3498db;
+  }
+}
+
+
