@@ -148,29 +148,29 @@ h6 {
   top: 0;
   left: 0;
   bottom: 0;
-  padding: 0 15px;
+  padding: 0 10px;
   transition: all ease-in-out 0.3s;
   overflow-y: auto;
   z-index: 997;
-  min-width: 200px;
+  min-width: 100px;
 }
 
 @media (max-width: 1199px) {
   .header {
     background-color: var(--background-color);
     border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    width: 300px;
+    width: 160px;
     left: -100%;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
   .header~main {
-    margin-left: 160px;
+    margin-left: 100px;
   }
 
   .header~main .hero {
-    margin-left: -160px;
+    margin-left: -100px;
     width: 100vw;
   }
 }
